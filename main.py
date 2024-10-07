@@ -22,6 +22,6 @@ while entering_url:
     except:
         print("Invalid URL")
 
-
+#tests
 driver = webdriver.Chrome()             # starts a virtual chrome session
 driver.get(website)
