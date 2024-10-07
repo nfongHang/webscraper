@@ -1,4 +1,4 @@
 #keyword search
 KeywordList = []
 while True:
-    print
+    KeywordList.append(str(input("Enter Keywords\n > ")))
