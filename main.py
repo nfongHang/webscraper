@@ -27,3 +27,4 @@ print(soup)
 #tests 
 driver = webdriver.Chrome()             # starts a virtual chrome session
 driver.get(website)
+input()
