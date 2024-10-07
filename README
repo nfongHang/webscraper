@@ -1,3 +1,7 @@
+!!! IMPORTANT !!!
+ go to terminal, and do:
+ pip install requests
+
 # 1 Scrape a website to find pdfs
 
 # 2 Download PDFs
@@ -8,6 +12,6 @@
    https://pypi.org/project/beautifulsoup4/                  branching through webpages and links, look at tree diagrams, not essential but good to do
    https://docs.python.org/3/library/io.html                 seems useful for creating text file for scraped information
 
- !!! IMPORTANT !!!
- go to terminal, and do:
- pip install requests
+ 
+Video about requests library
+ https://www.youtube.com/watch?v=7Y186Ycq3EI <-- why is bro so dead inside
