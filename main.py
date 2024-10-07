@@ -22,6 +22,6 @@ while entering_url:
     except:
         print("Invalid URL")
 
-#tests
+#tests scrimblo
 driver = webdriver.Chrome()             # starts a virtual chrome session
 driver.get(website)
