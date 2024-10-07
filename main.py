@@ -22,8 +22,9 @@ while entering_url:
             print('Failed to retrieve the webpage. Status code:', x.status_code)
     except:
         print("Invalid URL")
-soup = BeautifulSoup(x.text, 'html.parser')
-print(soup)
+soup = BeautifulSoup(x.text, 'html.parser')  #<--- apparently i read wrong its not for branching, nick, please read im not very sure
+print(soup)                                  # something about parsing html??????? no clue
+
 #tests 
 driver = webdriver.Chrome()             # starts a virtual chrome session
 driver.get(website)
