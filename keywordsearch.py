@@ -5,7 +5,7 @@ print("enter keywords")
 while True:
     # We need to put an if statement here or smth so the loop doesnt go on foreber
     KeywordInput = str(input("> "))
-    if str(input("> ")).lower() != "\n":
+    if KeywordInput != " ":
         KeywordList.append(KeywordInput.lower())
         print(KeywordList)
     else: 
