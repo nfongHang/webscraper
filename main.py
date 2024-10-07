@@ -6,6 +6,10 @@ if not "https://" in website:
     website="https://"+website
 try:                                  # tries to fetch website
     x = requests.get(website)         # when it responds with <Response [200]>, it means it connected successfully
-    print(type(x))                          #
+                                      # creates object of class "requests.models.Response"
+                                            # attributes of class:
+                                                # [object] .content      stores the html data of site
+                                                # 
+    print(type(x))
 except:
     print("Invalid URL")
