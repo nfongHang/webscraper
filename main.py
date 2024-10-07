@@ -1,5 +1,6 @@
 import requests
 import selenium
+from bs4 import BeautifulSoup
 from selenium import webdriver
 entering_url=True
 while entering_url:
@@ -21,7 +22,8 @@ while entering_url:
             print('Failed to retrieve the webpage. Status code:', x.status_code)
     except:
         print("Invalid URL")
-
-#tests scrimblo
+soup = BeautifulSoup(x.text, 'html.parser')
+print(soup)
+#tests 
 driver = webdriver.Chrome()             # starts a virtual chrome session
 driver.get(website)
