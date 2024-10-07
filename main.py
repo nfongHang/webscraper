@@ -6,6 +6,6 @@ if not "https://" in website:
     website="https://"+website
 try:                                  # tries to fetch website
     x = requests.get(website)         # when it responds with <Response [200]>, it means it connected successfully
-    print(x.content)
+    print(type(x))                          #
 except:
     print("Invalid URL")
