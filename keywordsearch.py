@@ -8,7 +8,6 @@ def keyWordSearch():
         KeywordInput = str(input("> "))
         if KeywordInput != " ":
             KeywordList.append(KeywordInput.lower())
-            print(KeywordList)
         else: 
             break
     return keyWordSearch
