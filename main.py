@@ -9,7 +9,8 @@ try:                                  # tries to fetch website
                                       # creates object of class "requests.models.Response"
                                             # attributes of class:
                                                 # .content                   stores the html data of site
+                                                # .text                      stores the html data of site, in unicode
                                                 # .apparent_encoding         holds the encoding format of text (utf-8, unicode, ASCII)   
-    print(x.url)
+    
 except:
     print("Invalid URL")
