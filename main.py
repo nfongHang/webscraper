@@ -10,6 +10,6 @@ try:                                  # tries to fetch website
                                             # attributes of class:
                                                 # [object] .content      stores the html data of site
                                                 # 
-    print(type(x))
+    print(x.apparent_encoding)
 except:
     print("Invalid URL")
