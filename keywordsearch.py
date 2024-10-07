@@ -1,15 +1,17 @@
 import re
 #keyword search
-KeywordList = []
-print("enter keywords")
-while True:
-    # We need to put an if statement here or smth so the loop doesnt go on foreber
-    KeywordInput = str(input("> "))
-    if KeywordInput != " ":
-        KeywordList.append(KeywordInput.lower())
-        print(KeywordList)
-    else: 
-        break
+def keyWordSearch():
+    KeywordList = []
+    print("enter keywords")
+    while True:
+        # We need to put an if statement here or smth so the loop doesnt go on foreber
+        KeywordInput = str(input("> "))
+        if KeywordInput != " ":
+            KeywordList.append(KeywordInput.lower())
+            print(KeywordList)
+        else: 
+            break
+    return keyWordSearch
 
 # How will the inputs happen
 re.search()
