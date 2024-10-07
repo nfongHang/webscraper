@@ -1,12 +1,14 @@
 import requests
+import selenium
+from selenium import webdriver
 entering_url=True
 while entering_url:
     website=str(input("Enter Website\n > "))
 
     if not "https://" in website:
         website="https://"+website
-    try:                                  # tries to fetch website
-        x = requests.get(website)         # when it responds with <Response [200]>, it means it connected successfully
+    try:                                # tries to fetch website
+        x = requests.get(website)       # when it responds with <Response [200]>, it means it connected successfully
                                         # creates object of class "requests.models.Response"
                                                 # attributes of class:
                                                     # .content                   stores the html data of site
@@ -16,6 +18,9 @@ while entering_url:
         if x.status_code == 200:        # Checks if status code is 200 (connection OK)
             entering_url=False
         else:
-            print('Failed to retrieve the webpage. Status code:', response.status_code)
+            print('Failed to retrieve the webpage. Status code:', x.status_code)
     except:
         print("Invalid URL")
+
+
+driver = webdriver.Chrome()             # starts a virtual chrome session
