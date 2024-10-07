@@ -24,3 +24,4 @@ while entering_url:
 
 
 driver = webdriver.Chrome()             # starts a virtual chrome session
+driver.get(website)
