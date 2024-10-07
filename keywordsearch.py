@@ -1,4 +1,8 @@
+import re
 #keyword search
 KeywordList = []
+print("enter keywords")
 while True:
-    KeywordList.append(str(input("Enter Keywords\n > ")))
+    # We need to put an if statement here or smth so the loop doesnt go on foreber
+    KeywordList.append(str(input("> ")).lower())
+re.search()

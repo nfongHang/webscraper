@@ -1,5 +1,6 @@
 import requests
 import selenium
+import re
 from selenium import webdriver
 entering_url=True
 while entering_url:
