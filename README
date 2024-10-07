@@ -29,6 +29,8 @@ Video about requests library
 Regex notation python?
  https://docs.python.org/3/library/re.html 
 
+ pip3 install regex
+
 THings to do:
  - Learn Regex: (regexr.com)
  - First search through information through websites to find relevant sentence with key words
