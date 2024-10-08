@@ -19,8 +19,14 @@ def keyWordSearch():
 def regExWordSearch (placeHolderString, placeHolderList):
     count = 0
     for i in placeHolderList:
+<<<<<<< HEAD
         if not re.search(i, placeHolderString):
             print("%s not found"%i)
+=======
+        print(i)
+        if re.search(i, placeHolderString):
+            count += 1
+>>>>>>> b5b1cbbf885521638b4dcfeb2af11e3bfbe97d46
     print(count)
     if count == len(placeHolderList):
         return True 
