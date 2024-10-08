@@ -1,7 +1,9 @@
 import requests
 import selenium
 import re
+from bs4 import BeautifulSoup
 from selenium import webdriver
+from urllib.request import urlopen
 entering_url=True
 while entering_url:
     website=str(input("Enter Website\n > "))
