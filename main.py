@@ -4,6 +4,8 @@ import re
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from urllib.request import urlopen
+import keywordsearch
+import regExWordSearcher
 entering_url=True
 while entering_url:
     website=str(input("Enter Website\n > "))
@@ -28,3 +30,4 @@ while entering_url:
 #tests scrimblo
 driver = webdriver.Chrome()             # starts a virtual chrome session
 driver.get(website)
+print(keywordsearch())
