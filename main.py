@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from urllib.request import urlopen
 import keywordsearch
-import regExWordSearcher
+
 entering_url=True
 while entering_url:
     website=str(input("Enter Website\n > "))
