@@ -1,15 +1,12 @@
 import requests
 import selenium
-import re
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from urllib.request import urlopen
-import keywordsearch
-
 entering_url=True
 while entering_url:
     website=str(input("Enter Website\n > "))
-# test 123
+
     if not "https://" in website:
         website="https://"+website
     try:                                # tries to fetch website
@@ -26,9 +23,11 @@ while entering_url:
             print('Failed to retrieve the webpage. Status code:', x.status_code)
     except:
         print("Invalid URL")
+soup = BeautifulSoup(x.text, 'html.parser')  #<--- apparently i read wrong its not for branching, nick, please read im not very sure
+print(soup)                                  # something about parsing html??????? no clue
 
-#tests scrimblo
+#tests 
 driver = webdriver.Chrome()             # starts a virtual chrome session
 driver.get(website)
-gg = keywordsearch.keyWordSearch()
-print(gg)
+
+#asdf
