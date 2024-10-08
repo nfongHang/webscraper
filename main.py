@@ -29,3 +29,5 @@ print(soup)                                  # something about parsing html?????
 #tests 
 driver = webdriver.Chrome()             # starts a virtual chrome session
 driver.get(website)
+
+#asdf
