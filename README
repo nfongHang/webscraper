@@ -12,8 +12,7 @@ peepsee poopoos
     https://www.w3schools.com/python/module_requests.asp      
             request module for python, fetches from website link
 
-    https://pypi.org/project/beautifulsoup4/               
-            branching through webpages and links, look at tree diagrams, not essential but good to do
+    https://pypi.org/project/beautifulsoup4/          NICK PLEASE READ INTO THIS APPARENTLY I WAS WRONG THANKS ITS ACTUALLY IMPORTANT OOPS
 
     https://docs.python.org/3/library/io.html              
             seems useful for creating text file for scraped information
@@ -32,7 +31,10 @@ Regex notation python?
  pip3 install regex
 
 THings to do:
- - Learn Regex: (regexr.com)
+ - Learn Regex: 
+    - regexr.com
+    - https://www.w3schools.com/python/python_regex.asp
+ 
  - First search through information through websites to find relevant sentence with key words
  - THen make pdf looking machine
  - Download 
