@@ -7,7 +7,7 @@ from urllib.request import urlopen
 entering_url=True
 while entering_url:
     website=str(input("Enter Website\n > "))
-
+# test 123
     if not "https://" in website:
         website="https://"+website
     try:                                # tries to fetch website
