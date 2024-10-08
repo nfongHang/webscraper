@@ -30,6 +30,7 @@ print(soup)                                  # something about parsing html?????
 #tests 
 driver = webdriver.Chrome()             # starts a virtual chrome session
 driver.get(website)
+keywordsearch.regExWordSearch(x.text,keywordsearch.keyWordSearch())
 
 #asdf
 #sdfghjggjfhahgj
