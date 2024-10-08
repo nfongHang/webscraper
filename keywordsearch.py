@@ -21,5 +21,6 @@ def regExWordSearch (placeHolderString, placeHolderList):
     for i in placeHolderList:
         if re.search(i, placeHolderString):
             count += 1
+    print(count)
     if count == len(placeHolderList):
         return True 
