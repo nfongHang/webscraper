@@ -30,4 +30,5 @@ while entering_url:
 #tests scrimblo
 driver = webdriver.Chrome()             # starts a virtual chrome session
 driver.get(website)
-print(keywordsearch())
+gg = keywordsearch.keyWordSearch()
+print(gg)
