@@ -25,6 +25,8 @@ while entering_url:
     except:
         print("Invalid URL")
 soup = BeautifulSoup(x.text, 'html.parser')  #<--- apparently i read wrong its not for branching, nick, please read im not very sure
+# apparently its for pulling HTML files
+# It works just fine I think?
 print(soup)                                  # something about parsing html??????? no clue
 
 #tests 
@@ -34,3 +36,6 @@ keywordsearch.regExWordSearch(x.text,keywordsearch.keyWordSearch())
 
 #asdf
 #sdfghjggjfhahgj
+
+# I think theres a selenium function which allows for accessing the web page with the code like going onto the search bar
+# This might solve one of the problems
