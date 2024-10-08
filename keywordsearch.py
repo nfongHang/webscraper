@@ -19,6 +19,7 @@ def keyWordSearch():
 def regExWordSearch (placeHolderString, placeHolderList):
     count = 0
     for i in placeHolderList:
+        print(i)
         if re.search(i, placeHolderString):
             count += 1
     print(count)
