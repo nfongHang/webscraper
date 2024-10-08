@@ -18,13 +18,17 @@ def keyWordSearch():
 
 def regExWordSearch (placeHolderString, placeHolderList):
     for i in placeHolderList:
-<<<<<<< HEAD
-        if not re.search(i, placeHolderString):
-            print("%s not found"%i)
-=======
         print(i)
+<<<<<<< HEAD
         if not re.search(i, placeHolderString):
             if input(i,"was not found in the website html. Proceed? Y/N") == "N":
                 return False
     print("All words are within html.")
     return True 
+=======
+        if re.search(i, placeHolderString):
+            count += 1
+    print(count)
+    if count == len(placeHolderList):
+        return True 
+>>>>>>> 73e806510457207d32a3163654a2caa752fa46dd
