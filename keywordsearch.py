@@ -1,4 +1,5 @@
 import re
+from selenium import driver
 #keyword search
 def keyWordSearch():
     KeywordList = []
@@ -24,3 +25,13 @@ def regExWordSearch (placeHolderString, placeHolderList):
                 return False
     print("All %s words are within html." % len(placeHolderList))
     return True 
+
+
+def searchKeyWords(KeyWordList):
+    big_string = ''
+    for i in KeyWordList:
+        big_string += ' ' + i
+    entering = driver.find_elements_by_class_name("ant-input ant-input-lg")
+    entering.send_keys(big_string)
+    
+
