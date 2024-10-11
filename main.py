@@ -2,6 +2,7 @@ import requests
 import selenium
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium import Keys
 from urllib.request import urlopen
 import keywordsearch
 entering_url=True
@@ -28,12 +29,12 @@ soup = BeautifulSoup(x.text, 'html.parser')  #<--- apparently i read wrong its n
 # apparently its for pulling HTML files
 # It works just fine I think?
 print(soup)                                  # something about parsing html??????? no clue
-
+keywords = keywordsearch.keyWordSearch()
 #tests 
 driver = webdriver.Chrome()             # starts a virtual chrome session
 driver.get(website)
-keywordsearch.regExWordSearch(x.text,keywordsearch.keyWordSearch())
-
+keywordsearch.regExWordSearch(x.text,keywords)
+keywordsearch.searchKeyWords(keywords)
 #asdf
 #sdfghjggjfhahgj
 

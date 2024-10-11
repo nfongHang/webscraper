@@ -1,5 +1,6 @@
 import re
 from selenium import driver
+from selenium import Keys
 #keyword search
 def keyWordSearch():
     KeywordList = []
@@ -33,5 +34,6 @@ def searchKeyWords(KeyWordList):
         big_string += ' ' + i
     entering = driver.find_elements_by_class_name("ant-input ant-input-lg")
     entering.send_keys(big_string)
-    
+    entering.send_keys(Keys.ENTER)
+
 
