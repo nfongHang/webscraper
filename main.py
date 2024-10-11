@@ -32,7 +32,7 @@ keywords = keywordsearch.keyWordSearch()
 #tests 
 driver = webdriver.Chrome()             # starts a virtual chrome session
 driver.get(website)
-keywordsearch.regExWordSearch(x.text,keywords)
+# keywordsearch.regExWordSearch(x.text,keywords)
 keywordsearch.searchKeyWords(keywords)
 #asdf
 #sdfghjggjfhahgj

@@ -18,14 +18,14 @@ def keyWordSearch():
 # We can turn this into a function in th emain body
 
 
-def regExWordSearch (placeHolderString, placeHolderList):
-    for i in placeHolderList:
-        print(i)
-        if not re.search(i, placeHolderString):
-            if input(str(i,"was not found in the website html. Proceed? Y/N")) == "N":
-                return False
-    print("All %s words are within html." % len(placeHolderList))
-    return True 
+# def regExWordSearch (placeHolderString, placeHolderList):
+#     for i in placeHolderList:
+#         print(i)
+#         if not re.search(i, placeHolderString):
+#             if input(str(i,"was not found in the website html. Proceed? Y/N")) == "N":
+#                 return False
+#     print("All %s words are within html." % len(placeHolderList))
+#     return True 
 
 
 def searchKeyWords(KeyWordList):
