@@ -1,6 +1,6 @@
 import re
 from selenium import webdriver
-from selenium import Keys
+from selenium.webdriver.common.keys import Keys
 #keyword search
 def keyWordSearch():
     KeywordList = []
