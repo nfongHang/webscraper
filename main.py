@@ -2,7 +2,6 @@ import requests
 import selenium
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from selenium import Keys
 from urllib.request import urlopen
 import keywordsearch
 entering_url=True
