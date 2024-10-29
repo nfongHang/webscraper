@@ -4,6 +4,12 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from urllib.request import urlopen
 import keywordsearch
+def setup(link)
+    driver = webdriver.Chrome()
+    driver.get(link)
+    return driver
+
+
 entering_url=True
 while entering_url:
     website=str(input("Enter Website\n > "))
@@ -27,10 +33,19 @@ while entering_url:
 soup = BeautifulSoup(x.text, 'html.parser')  #<--- apparently i read wrong its not for branching, nick, please read im not very sure
 print(soup)                                  # something about parsing html??????? no clue
 
-#tests 
-driver = webdriver.Chrome()             # starts a virtual chrome session
-driver.get(website)
-keywordsearch.regExWordSearch(x.text,keywordsearch.keyWordSearch())
 
-#asdf
-#sdfghjggjfhahgj
+
+driver = setup(website)             # starts a virtual chrome session
+
+if keywordsearch.lookup(x.text,keywordsearch.keyWordSearch()):
+   pass 
+
+
+#employ a DFS recursive function? go and search, storing all the relevant sentences and the link they are from , then open every
+
+#selenium function to be able to enter in the relevant word into the 
+#look into webbot instead of selenium
+#be able to:
+#   a: enter into search bar
+#   b: wait for the books to come up
+#       b2: search through all the books

@@ -16,7 +16,7 @@ def keyWordSearch():
 # We can turn this into a function in th emain body
 
 
-def regExWordSearch (placeHolderString, placeHolderList):
+def lookup (placeHolderString, placeHolderList):
     for i in placeHolderList:
         print(i)
         if not re.search(i, placeHolderString):
