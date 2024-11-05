@@ -7,7 +7,7 @@ def keyWordSearch():
     print("enter keywords")
     while True:
         # We need to put an if statement here or smth so the loop doesnt go on foreber
-        keywordInput = str(input("To enter more than one in one row, use a comma to parse multiple> "))
+        keywordInput = str(input(" > "))
         if keywordInput != " ":
             keywordInput=[keywordInput]
             for i in range(len(keywordInput)):
@@ -24,7 +24,7 @@ def lookup (placeHolderString, placeHolderList):
     lookupDict={}
     unmatchedCount=0
     for i in placeHolderList:
-        expression=r'[^\./<>",]*(\b' + re.escape(i) + r'\b)[^\./<>",]+\.?'
+        expression=r'[^\.]*(\b' + re.escape(i) + r'\b)[^\.]+\.?'
         print(expression)
         matches=re.findall( re.compile((expression), re.I) , placeHolderString)
         print(matches)
