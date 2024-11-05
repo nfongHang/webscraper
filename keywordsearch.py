@@ -19,13 +19,21 @@ def keyWordSearch():
 
 
 def lookup (placeHolderString, placeHolderList):
+    lookupDict={}
+    unmatchedCount=0
     for i in placeHolderList:
-        print(i)
-        if not re.search(i, placeHolderString):
+        expression='[^\.]*(\b%s\b)[^\.]+\.?' % i
+        matches=re.findall( re.compile((expression), re.I) , placeHolderString)
+        print(matches)
+        if matches:
+            lookupDict.update({i:matches})
+        else:
             if input(str(i,"was not found in the website html. Proceed? Y/N")) == "N":
                 return False
-    print("All %s words are within html." % len(placeHolderList))
-    return True 
+            else:
+                unmatchedCount+=1
+    print("%s words / %s words matched." % (len(placeHolderList)-unmatchedCount,len(placeHolderList)))
+    return(lookupDict) 
 
 
 def searchKeyWords(KeyWordList):
