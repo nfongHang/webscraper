@@ -10,11 +10,7 @@ def keyWordSearch():
         keywordInput = str(input("> "))
         if keywordInput != " ":
                 #split multiple words in one line
-            keywordInput.split(" ")
-            try:
-                keywordInput.split(",")
-            except:
-                pass
+            keywordInput=keywordInput.split(" ")
             print(keywordInput)
                 #
             while True:
@@ -23,9 +19,9 @@ def keyWordSearch():
                 except:
                     break
         
-        keywordInput=[keywordInput]
-        for i in range(len(keywordInput)):
-            keywordList.append(keywordInput[i].lower())
+            keywordInput=[keywordInput]
+            for i in range(len(keywordInput)):
+                keywordList.append(keywordInput[i].lower())
         else: 
             break
     return keywordList
