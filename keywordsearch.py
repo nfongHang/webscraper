@@ -7,8 +7,24 @@ def keyWordSearch():
     print("enter keywords")
     while True:
         # We need to put an if statement here or smth so the loop doesnt go on foreber
-        KeywordInput = str(input("> "))
-        if KeywordInput != " ":
+        keywordInput = str(input("> "))
+        if keywordInput != " ":
+            try:
+                #split multiple words in one line
+                keywordInput.split(" ")
+                try:
+                    keywordInput.split(",")
+                except:
+                    pass
+                #
+                while True:
+                    try:
+                        keywordInput.remove("")
+                    except:
+                        break
+            except:
+                keywordInput=[keywordInput]
+            for x in range()
             KeywordList.append(KeywordInput.lower())
         else: 
             break
