@@ -22,7 +22,7 @@ def lookup (placeHolderString, placeHolderList):
     lookupDict={}
     unmatchedCount=0
     for i in placeHolderList:
-        expression=r'[^\./<>",]*(\b' + i + r'\b)[^\./<>",]+\.?'
+        expression=r'[^\./<>",]*(\b' + re.escape(i) + r'\b)[^\./<>",]+\.?'
         print(expression)
         matches=re.findall( re.compile((expression), re.I) , placeHolderString)
         print(matches)
