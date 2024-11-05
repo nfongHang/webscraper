@@ -16,6 +16,8 @@ while entering_url:
 
     if not "https://" in website:
         website="https://"+website
+    if not ".com" in website:
+        website=website+".com"
     try:                                # tries to fetch website
         x = requests.get(website)       # when it responds with <Response [200]>, it means it connected successfully
                                         # creates object of class "requests.models.Response"

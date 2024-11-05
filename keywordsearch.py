@@ -16,6 +16,7 @@ def keyWordSearch():
                     keywordInput.split(",")
                 except:
                     pass
+                print(keywordInput)
                 #
                 while True:
                     try:
