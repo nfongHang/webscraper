@@ -28,7 +28,8 @@ def lookup (placeHolderString, placeHolderList):
         if matches:
             lookupDict.update({i:matches})
         else:
-            if input(str(i,"was not found in the website html. Proceed? Y/N")) == "N":
+            message=str(i,"was not found in the website html. Proceed? Y/N")
+            if input(message) == "N":
                 return False
             else:
                 unmatchedCount+=1
