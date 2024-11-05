@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 #keyword search
 def keyWordSearch():
-    KeywordList = []
+    keywordList = []
     print("enter keywords")
     while True:
         # We need to put an if statement here or smth so the loop doesnt go on foreber
@@ -24,11 +24,11 @@ def keyWordSearch():
                         break
             except:
                 keywordInput=[keywordInput]
-            for x in range()
-            KeywordList.append(KeywordInput.lower())
+            for i in range(len(keywordInput)):
+                keywordList.append(keywordInput[i].lower())
         else: 
             break
-    return KeywordList
+    return keywordList
 
 # How will the inputs happen
 # We can turn this into a function in th emain body
@@ -54,9 +54,9 @@ def lookup (placeHolderString, placeHolderList):
     return(lookupDict) 
 
 
-def searchKeyWords(KeyWordList):
+def searchKeyWords(keyWordList):
     big_string = ''
-    for i in KeyWordList:
+    for i in keyWordList:
         big_string += ' ' + i
     #entering = webdriver.find_elements_by_class_name("ant-input ant-input-lg") is there annother atrtribute we can use to fing the text box
     #entering.send_keys(big_string)
