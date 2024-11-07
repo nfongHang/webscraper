@@ -1,6 +1,6 @@
 import re
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+from selenium import webdriver, Keys,ActionChains
+from selenium.webdriver.common.by import By
 #keyword search
 def keyWordSearch():
     keywordList = []
@@ -41,12 +41,10 @@ def lookup (placeHolderString, placeHolderList):
     return(lookupDict) 
 
 
-def searchKeyWords(keyWordList):
+def searchKeyWords(keyWordList, driver):
     big_string = ''
     for i in keyWordList:
         big_string += ' ' + i
-    #entering = webdriver.find_elements_by_class_name("ant-input ant-input-lg") is there annother atrtribute we can use to fing the text box
-    #entering.send_keys(big_string)
-    #entering.send_keys(Keys.ENTER)
-
-
+    ActionChains(driver)\
+    .send_keys(big_string)\
+    .perform()
