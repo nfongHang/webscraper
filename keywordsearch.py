@@ -27,7 +27,8 @@ def lookup (placeHolderString, placeHolderList):
         expression=r'[^\.]*(\b' + re.escape(i) + r'\b)[^\.]+\.?'
         print(expression)
         matches=re.findall( re.compile((expression), re.I) , placeHolderString)
-        print(matches)
+        for item in matches:
+            print(item)
         if matches:
             lookupDict.update({i:matches})
         else:
