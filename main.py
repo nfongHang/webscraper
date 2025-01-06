@@ -3,7 +3,7 @@ import selenium
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from urllib.request import urlopen
-import keywordsearch
+
 def setup(link):
     driver = webdriver.Chrome()
     driver.get(link)
