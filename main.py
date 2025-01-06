@@ -32,14 +32,10 @@ while entering_url:
             print('Error: Failed to retrieve the webpage. \n Status code:', x.status_code)
     except:
         print("Invalid URL")
+
 soup = BeautifulSoup(x.text, 'html.parser')  #<--- apparently i read wrong its not for branching, nick, please read im not very sure
-print(soup)                                  # something about parsing html??????? no clue
+print(soup.prettify())                                  # something about parsing html??????? no clue
 
-
-
-driver = setup(website)             # starts a virtual chrome session
-
-print(keywordsearch.lookup(x.text,keywordsearch.keyWordSearch()))
  
 
 
