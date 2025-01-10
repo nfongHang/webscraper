@@ -21,10 +21,10 @@ while entering_url:
     try:                                # tries to fetch website
         x = requests.get(website)       # when it responds with <Response [200]>, it means it connected successfully
                                         # creates object of class "requests.models.Response"
-                                                # attributes of class:
-                                                    # .content                   stores the html data of site
-                                                    # .text                      stores the html data of site, in unicode
-                                                    # .apparent_encoding         holds the encoding format of text (utf-8, unicode, ASCII)   
+                                            # attributes of class:
+                                                # .content                   stores the html data of site
+                                                # .text                      stores the html data of site, in unicode
+                                                # .apparent_encoding         holds the encoding format of text (utf-8, unicode, ASCII)   
         
         if x.status_code == 200:        # Checks if status code is 200 (connection OK)
             entering_url=False
